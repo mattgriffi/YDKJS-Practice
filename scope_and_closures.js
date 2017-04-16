@@ -1,14 +1,6 @@
 "use strict";
-function foo(obj) {
-    with (obj) {
-        a = 2;
-    }
+for (var i=1; i<=5; i++) {
+	setTimeout( function timer(){
+		console.log( i );
+	}, i*1000 );
 }
-
-var o2 = {
-    b: 3
-}
-
-foo(o2);
-console.log(o2.a);
-console.log(a);
